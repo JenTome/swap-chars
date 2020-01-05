@@ -7,11 +7,13 @@ public class swapchars {
 	}
 
 	public static String swap2(String str) {
-		// TODO Auto-generated method stub
-		char char1 = str.charAt(0);
-		char char2 = str.charAt(1);
+
+		int strLength = str.length();
 		
-		return "" + char2 + char1;
+		char lastCharacter = str.charAt(strLength - 1);
+		char secondToLastCharacter = str.charAt(strLength - 2);
+		
+		return "" + lastCharacter + secondToLastCharacter;
 	}
 
 }
